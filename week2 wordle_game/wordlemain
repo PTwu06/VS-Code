@@ -4,3 +4,10 @@ if __name__ =="__main__":
     user_input = input()
 
 
+    #(2) specify an answer
+    f = open("words.txt","r")
+    dictionary = f.read().splitlines()
+    f.close()
+    
+    answer = random.sample(dictionary,1)[0]
+    print(answer)
